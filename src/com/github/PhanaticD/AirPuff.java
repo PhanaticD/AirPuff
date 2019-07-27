@@ -80,7 +80,7 @@ public class AirPuff extends AirAbility implements AddonAbility
             return;
         }
 
-        //move the location of the move forward
+        //move the location of the move forward in the direction the player is looking
         location.add(player.getEyeLocation().getDirection());
 
         //this is to check that the move does not go through solid blocks
@@ -127,12 +127,12 @@ public class AirPuff extends AirAbility implements AddonAbility
 
     @Override
     public String getDescription() {
-        return "Does Nothing";
+        return "Basic puff of air";
     }
 
     @Override
     public String getInstructions() {
-        return "Click to do nothing";
+        return "Left Click to launch the puff of air";
     }
     
     @Override
