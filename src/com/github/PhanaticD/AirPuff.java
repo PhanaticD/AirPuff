@@ -68,7 +68,7 @@ public class AirPuff extends AirAbility implements AddonAbility
             return;
         }
 
-        //assuming "loc" is where your move is, uncomment this to remove the move when its in a area blocked from building
+        //assuming location is where your move is, remove the move when its in a area blocked from building by other plugins
         if (GeneralMethods.isRegionProtectedFromBuild(this, location)){
             remove();
             return;
